@@ -24,3 +24,8 @@ RUN git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git .
 WORKDIR /openpose/build
 RUN cmake -DBUILD_PYTHON=ON .. && make -j `nproc`
 WORKDIR /openpose
+
+#for python api
+RUN pip3 install setuptools wheel
+RUN pip3 install jupyterlab
+#todo: add vim extension
