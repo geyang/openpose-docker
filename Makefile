@@ -1,5 +1,4 @@
 build:
-	echo '0.1' > VERSION
-	docker build --tag openpose:0.1 .
+	docker build --tag openpose:`< VERSION` .
 publish:
 	docker push episodeyang/openpose:`< VERSION`
