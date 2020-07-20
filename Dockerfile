@@ -28,4 +28,6 @@ WORKDIR /openpose
 #for python api
 RUN pip3 install setuptools wheel
 RUN pip3 install jupyterlab
+RUN pip3 install Pillow
+RUN pip3 install matplotlib
 #todo: add vim extension
