@@ -30,4 +30,5 @@ RUN pip3 install setuptools wheel
 RUN pip3 install jupyterlab
 RUN pip3 install Pillow
 RUN pip3 install matplotlib
+RUN pip3 install ml-logger
 #todo: add vim extension
